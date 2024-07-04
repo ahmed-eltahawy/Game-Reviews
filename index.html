@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Reviews</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <div class="loading-overlay"> 
+    <div class="loading-spinner"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img  src="assets/image/logo.png" alt="Game Reviews Logo" height="40"> 
+        Game Reviews
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item">
+            <button class="nav-link filter-btn active" data-filter="all">All</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link filter-btn" data-filter="MMORPG">MMORPG</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link filter-btn" data-filter="Shooter">Shooter</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link filter-btn" data-filter="Sailing">Sailing</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link filter-btn" data-filter="Permadeath">Permadeath</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link filter-btn" data-filter="Superhero">Superhero</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link filter-btn" data-filter="Pixel">Pixel</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-section"></div>
+
+  <main>
+    <section class="games-section">
+      <div class="container">
+        <div class="games-grid"></div>
+      </div>
+    </section>
+
+    <section class="game-details-section" style="display: none">
+      <div class="container">
+        <div class="close-btn">
+          <button>X</button>
+        </div>
+        <div class="game-details"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
